@@ -1,10 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
-        public static String array[] = new String [10];
-         Scanner scanInput = new Scanner(System.in); // scanner to get input
+    public static String array[] = new String [10];
+    Scanner scanInput = new Scanner(System.in); // scanner to get input
     public static void main(String[] args) {
-            displaymenu();
+        displaymenu();
     }
     private static void displaymenu(){
         int choice;
@@ -40,7 +40,7 @@ public class Main {
             position = scanInput.nextInt();
         }
 
-        while (position >= 1 && position <=10){
+        if (position >= 1 && position <=10){
             array[position -1] = name;
             System.out.print("Would you like to insert another name?" + '\n'+ "1. Yes" + '\n'+"2.No");
             choice = scanInput.nextInt();
